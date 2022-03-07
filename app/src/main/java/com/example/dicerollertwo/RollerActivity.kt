@@ -25,6 +25,7 @@ class RollerActivity: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.roller)
+
         try {
             if (savedInstanceState != null){
                 var state = savedInstanceState.getSerializable("historyObject") as HistoryManager

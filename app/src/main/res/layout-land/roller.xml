@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/frontpagedice"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/btnRoll"
+            android:text="Roll"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </Button>
+
+        <Button
+            android:id="@+id/btnHistory"
+            android:text="History"
+            android:layout_alignParentBottom="true"
+            android:onClick="showHistory"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </Button>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/diceContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="175dp"
+        android:layout_marginLeft="140dp"
+        android:layout_alignParentBottom="true">
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvAmount"
+        android:layout_centerHorizontal="true"
+        android:text="Amount of Dices"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="120dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+    </TextView>
+
+    <SeekBar
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="90dp"
+        android:id="@+id/numberOfDice"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleY="2"
+        android:max="5"
+        android:progress="5"
+        />
+
+    <TextView
+        android:id="@+id/txtRoll"
+        android:text="Roll the Dices!!"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:textSize="40sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/distribution"
+        android:layout_width="390dp"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/dis2"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="150dp"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:id="@+id/dis3"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:id="@+id/dis4"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:id="@+id/dis5"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:id="@+id/dis6"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:id="@+id/dis7"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:id="@+id/dis8"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:id="@+id/dis9"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:id="@+id/dis10"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:id="@+id/dis11"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:id="@+id/dis12"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
